@@ -8,6 +8,7 @@ There is **no runnable MVP yet**.
 - Enterprise-grade architecture (`docs/architecture.md`)
 - Feature design: Strict Mode, Answer Packs, Audit/Export, Staleness Radar
 - Project workflow and milestones (`docs/project-management.md`)
+- Roadmap (GitHub Project): https://github.com/users/MartinMilevVenelinova/projects/2
 
 **What will exist in MVP (Milestone M1):**
 - A local CLI to ingest a small corpus and answer with **ranked citations**
