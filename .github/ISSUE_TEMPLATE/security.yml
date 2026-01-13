@@ -1,0 +1,46 @@
+name: Security
+description: Security hardening, vulnerabilities, or security concerns.
+title: "[Security] "
+labels: ["type:security", "status:needs-triage", "p0", "risk:security"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ Do not post secrets, credentials, or sensitive internal data.
+        If this is a sensitive vulnerability, consider reporting privately.
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: Security issue / concern
+      description: Describe the security problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: What could happen if exploited?
+    validations:
+      required: true
+
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Proposed mitigation
+      description: Suggested fix or mitigation steps.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - "p0"
+        - "p1"
+        - "p2"
+        - "p3"
+    validations:
+      required: true
