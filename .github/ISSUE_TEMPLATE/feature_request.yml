@@ -68,7 +68,7 @@ body:
       label: Risk
       description: Does this change carry special risk?
       options:
-        - "None"
+        - "No special risk"
         - "risk:breaking-change"
         - "risk:perf"
         - "risk:security"
