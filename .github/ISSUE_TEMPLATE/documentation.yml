@@ -1,0 +1,31 @@
+name: Documentation
+description: Documentation improvements or fixes.
+title: "[Docs] "
+labels: ["type:docs", "status:needs-triage", "p2"]
+body:
+  - type: textarea
+    id: change
+    attributes:
+      label: What needs to change?
+      placeholder: Describe the doc update needed and where.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why?
+      placeholder: Explain why this change is needed (clarity, accuracy, missing info).
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+      

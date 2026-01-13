@@ -1,0 +1,76 @@
+name: Feature request
+description: Propose a new capability or improvement.
+title: "[Feature] "
+labels: ["type:feature", "status:needs-triage", "p2"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Motivation
+      description: What problem does this solve? Why is it needed?
+      placeholder: Describe the problem and who is impacted.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this work?
+      placeholder: Bullet list of what will be delivered.
+    validations:
+      required: true
+
+  - type: textarea
+    id: nonscope
+    attributes:
+      label: Non-scope
+      description: What is explicitly out of scope?
+      placeholder: Bullet list of what will NOT be done.
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Checklist of measurable completion criteria.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: testplan
+    attributes:
+      label: Test Plan
+      description: How will this be verified?
+      placeholder: |
+        Unit tests:
+        Integration tests:
+        Manual steps:
+    validations:
+      required: true
+
+  - type: textarea
+    id: docsimpact
+    attributes:
+      label: Docs Impact
+      description: Which docs need updates?
+      placeholder: E.g., docs/architecture.md, README.md
+    validations:
+      required: false
+
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk
+      description: Does this change carry special risk?
+      options:
+        - "None"
+        - "risk:breaking-change"
+        - "risk:perf"
+        - "risk:security"
+    validations:
+      required: true
