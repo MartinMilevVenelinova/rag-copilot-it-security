@@ -1,6 +1,17 @@
 # RAG Copilot for IT & Security Knowledge
 
-**Status:** Phase 0 — Documentation complete
+## Project status
+**Current state:** documentation & architecture only (Phase 0).  
+There is **no runnable MVP yet**.
+
+**What exists today:**
+- Enterprise-grade architecture (`docs/architecture.md`)
+- Feature design: Strict Mode, Answer Packs, Audit/Export, Staleness Radar
+- Project workflow and milestones (`docs/project-management.md`)
+
+**What will exist in MVP (Milestone M1):**
+- A local CLI to ingest a small corpus and answer with **ranked citations**
+- Strict Mode returning **Not found** when evidence is missing
 
 An internal **documentation copilot + RAG (Retrieval-Augmented Generation)** for **IT / Support / Helpdesk / Cybersecurity** teams.
 
