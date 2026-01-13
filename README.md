@@ -1,5 +1,7 @@
 # RAG Copilot for IT & Security Knowledge
+
 **Status:** Phase 0 — Documentation complete
+
 An internal **documentation copilot + RAG (Retrieval-Augmented Generation)** for **IT / Support / Helpdesk / Cybersecurity** teams.
 
 **Core promise:** answers are **evidence-based**, with **mandatory citations**, source ranking, and a **Strict Mode** that refuses to guess.
