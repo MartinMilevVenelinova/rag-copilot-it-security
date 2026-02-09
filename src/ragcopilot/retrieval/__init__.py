@@ -5,6 +5,9 @@ from .models import (
     RetrievalTrace,
     RetrievalResult,
 )
+from .interfaces import EmbeddingProvider, VectorIndex, Retriever
+from .index import InMemoryCosineVectorIndex
+from .retrievers import BasicRetriever
 
 __all__ = [
     "RetrievalFilter",
@@ -12,4 +15,9 @@ __all__ = [
     "RetrievedChunk",
     "RetrievalTrace",
     "RetrievalResult",
+    "EmbeddingProvider",
+    "VectorIndex",
+    "Retriever",
+    "InMemoryCosineVectorIndex",
+    "BasicRetriever",
 ]

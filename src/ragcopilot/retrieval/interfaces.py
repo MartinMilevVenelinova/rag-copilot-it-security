@@ -3,7 +3,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Iterable, Protocol, Sequence
 
-from .models import RetrievedChunk, RetrievalFilter, RetrievalQuery
+from .models import RetrievedChunk, RetrievalFilter, RetrievalQuery, RetrievalResult
 
 
 class EmbeddingProvider(Protocol):
@@ -54,8 +54,5 @@ class Retriever(ABC):
     """
 
     @abstractmethod
-    def retrieve(
-        self,
-        query: RetrievalQuery,
-    ) -> Sequence[RetrievedChunk]:
+    def retrieve(self, query: RetrievalQuery) -> RetrievalResult:
         raise NotImplementedError
